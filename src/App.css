@@ -1,0 +1,74 @@
+* {
+  box-sizing: content-box;
+}
+@media (min-width: 100px) and (max-width: 600px) {
+  .textCenter {
+    text-align: center;
+  }
+  .btnStyle {
+    position: absolute;
+    bottom: 40%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .heroImage {
+    height: 55%;
+    right: 5%;
+    bottom: 8%;
+  }
+  .btnStyle {
+    position: absolute;  
+    bottom: 10%;
+    left: 20%;
+  }
+  .textCenter {
+    text-align: center;
+  }
+  .cardCenter {
+    justify-content: center;
+    align-items: center;
+  }
+  .companyImage {
+    height: 65%;
+  }
+  .infoCard{
+    display: grid;
+    justify-content: center;
+  }
+  .infoCard > img {
+    /* height: 50%; */
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .heroImage {
+    height: 75%;
+    bottom: 8%;
+    right: 15%;
+  }
+  .cardImg {
+    height: 90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .btnStyle {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+  }
+}
+@media (min-width: 900px) and (max-width: 1200px) {
+  .heroImage {
+    height: 65%;
+    bottom: 8%;
+    right: 5%;
+  }
+  .btnStyle {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+  }
+}
