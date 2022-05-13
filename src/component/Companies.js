@@ -59,23 +59,24 @@ function Companies() {
               spacing={3}
               minHeight= "25vh"
               
+              
             >
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Make} alt="img" />
               </Grid>
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Dorfus} alt="img" />
               </Grid>
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Greener} alt="img" />
               </Grid>
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Sass} alt="img" />
               </Grid>
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Coworks} alt="img" />
               </Grid>
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2}>
+              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
                 <img src={Askimat} alt="img" />
               </Grid>
             </Grid>

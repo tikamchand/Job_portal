@@ -37,7 +37,7 @@ function InformationT() {
     <>
       <ThemeProvider theme={theme}>
         <Container bgcolor="#fbfbfb">
-          <Grid container my={10}>
+          <Grid container my={10} minHeight={"85vh"} justifyContent="center" alignItems="center">
             <Grid item xs={12} md={12} lg={6} className="infoCard">
               <img src={CardImage} alt="Card" className="cardImg"></img>
 
@@ -47,6 +47,7 @@ function InformationT() {
                 variant="h2"
                 color="#2b3940"
                 sx={{ fontWeight: "bold" }}
+                mb={5}
               >
                 Get applications from the world best talents.
               </Typography>

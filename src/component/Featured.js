@@ -57,7 +57,7 @@ function Featured() {
             >
               Featured Jobs
             </Typography>
-            <Grid container spacing={2} className="cardCenter">
+            <Grid container spacing={2} justifyContent="center" alignItems="center">
               <Grid item>
                 <Card
                   sx={{ maxWidth: 360, padding: "20px", borderRadius: "10px" }}

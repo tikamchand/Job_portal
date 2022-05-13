@@ -118,7 +118,7 @@ function Category(props) {
           >
             Explore With Category
           </Typography>
-          <Grid container spacing={4} className="cardCenter">
+          <Grid container spacing={4} justifyContent="center" alignItems="center">
             <Grid item>
               <Card
                 sx={{

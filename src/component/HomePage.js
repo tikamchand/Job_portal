@@ -87,13 +87,7 @@ function HomePage() {
 
           <img src={HeroPattern} alt="img" style={patternStyles} />
           <Box className="btnStyle">
-            <Button
-              variant="contained"
-              color="secondary"
-              size="large"
-              sx={{ right: "25%", marginTop: "20px" }}
-              
-            >
+            <Button variant="contained" color="secondary" size="large">
               Search Jobs
             </Button>
           </Box>

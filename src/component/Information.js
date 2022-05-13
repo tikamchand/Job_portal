@@ -39,8 +39,8 @@ theme = responsiveFontSizes(theme);
     <>
       <ThemeProvider theme={theme}>
         <Container>
-          <Grid container my={10} spacing={2}>
-            <Grid item xs={12} md={6} lg={6} className={"infoCard"}>
+          <Grid container my={10} spacing={2} minHeight={"80vh"} justifyContent="center" alignItems="center">
+            <Grid item xs={12} md={6} lg={6} className={"infoCard infoCardS"}>
               <img src={CardImage} alt="Card"></img>
               <Box sx={{ position: "relative"}}>
                 <Card
@@ -83,6 +83,7 @@ theme = responsiveFontSizes(theme);
                 variant="h2"
                 color="#2b3940"
                 sx={{ fontWeight: "bold" }}
+                pt={{xs:8, md:0}}
               >
                 Help you to get the best job that fits you
               </Typography>
