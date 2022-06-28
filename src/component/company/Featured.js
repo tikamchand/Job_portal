@@ -18,7 +18,7 @@ import Shopify from "../img/shopee.png";
 import Uber from "../img/uber.png";
 import Facebook from "../img/facebook.png";
 import Oculus from "../img/oculus.png"
-import "../App.css";
+import "../../App.css";
 function Featured() {
   let theme = createTheme({
     palette: {
@@ -54,6 +54,7 @@ function Featured() {
               mb={8}
               sx={{ color: "#ffffff", fontWeight: "bold" }}
               className="textCenter"
+              id="featured"
             >
               Featured Jobs
             </Typography>

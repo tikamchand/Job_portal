@@ -2,7 +2,7 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
+// import Typography from "@mui/material/Typography";
 import { createTheme, useMediaQuery } from "@mui/material";
 import { ThemeProvider } from "@mui/material";
 import Container from "@mui/material/Container";
@@ -13,7 +13,6 @@ import { useState } from "react";
 import { responsiveFontSizes } from "@mui/material/styles";
 import Logo from "../img/logo.png";
 import DrawerMenu from "./DrawerMenu";
-
 export default function Navbar() {
   let theme = createTheme({
     palette: {
@@ -40,14 +39,25 @@ export default function Navbar() {
   });
   theme = responsiveFontSizes(theme);
   const [value, setValue] = useState(0);
+  const [navbar, setNavbar] = useState(false);
   const isMatch = useMediaQuery(theme.breakpoints.down("md"));
-  const PAGES = ["Home", "Category", "Features"];
+  const PAGES = ["home","client", "category", "featured"];
+  function changeBgColor() {
+    if(window.scrollY >= 80){
+      setNavbar(true)    
+      // console.log(window.scrollY) 
+    }
+    else{
+      setNavbar(false)
+    }
+  }
+  window.addEventListener("scroll",changeBgColor)
   return (
     <>
       <ThemeProvider theme={theme}>
         <AppBar
-          position="static"
-          style={{ backgroundColor: "#e4ece8", boxShadow: "none" }}
+          position= "sticky"
+         style={navbar ?{ backgroundColor: "#fff", boxShadow:"none"} :{ backgroundColor: "#e9f6f0", boxShadow:"none"} }
         >
           <Container>
             <Toolbar disableGutters>
@@ -71,7 +81,7 @@ export default function Navbar() {
                     >
                       {PAGES.map((page, index) => {
                         return (
-                        <Tab key={index} label={page} 
+                        <Tab key={index} label={page} href= {"#"+page}
                          />)
                       })}
                     </Tabs>

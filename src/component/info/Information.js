@@ -16,7 +16,7 @@ import  Uber from "../img/uber-small.png";
 import Pepsi from "../img/pepsi.png";
 import  GitHub from "../img/github.png";
 import {responsiveFontSizes} from "@mui/material/styles";
-import "../App.css";
+import "../../App.css";
 function Information() {
   let theme = createTheme({});
   theme = createTheme(theme, {

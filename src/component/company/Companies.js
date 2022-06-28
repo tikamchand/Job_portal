@@ -11,7 +11,7 @@ import Typography from "@mui/material/Typography";
 import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 import { Box } from "@mui/material";
-import "../App.css";
+import "../../App.css";
 
 function Companies() {
   const companyImageStyle = {
@@ -44,6 +44,7 @@ function Companies() {
               color="white"
               pt={5}
               className="textCenter"
+              id="client"
             >
               Get hired in top companies
             </Typography>
@@ -56,12 +57,12 @@ function Companies() {
               direction="row"
               justifyContent="center"
               alignItems="center"
-              spacing={3}
+              spacing={2}
               minHeight= "25vh"
               
               
             >
-              <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">
+              <Grid item xs={12} sm={3} md={4} lg={2} className="companyImg">
                 <img src={Make} alt="img" />
               </Grid>
               <Grid item xs={12} sm={3} md={4} lg={2} m={2} className="companyImg">

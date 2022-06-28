@@ -28,7 +28,7 @@ import LinkIcon from "@mui/icons-material/Link";
 import TitleIcon from "@mui/icons-material/Title";
 import DescriptionIcon from "@mui/icons-material/Description";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import database from "./Firebase";
+// import database from "./Firebase";
 import { useState } from "react";
 
 const steps = [

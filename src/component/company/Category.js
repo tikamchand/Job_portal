@@ -15,7 +15,7 @@ import SendIcon from "@mui/icons-material/Send";
 import ViewSidebarIcon from "@mui/icons-material/ViewSidebar";
 import PersonIcon from "@mui/icons-material/Person";
 import {responsiveFontSizes} from "@mui/material/styles";
-import "../App.css"
+import "../../App.css";
 function Category(props) {
   let theme = createTheme({});
   theme = createTheme(theme, {
@@ -115,6 +115,7 @@ function Category(props) {
             p={5}
             sx={{ color: "#2b3940", fontWeight: "bold" }}
             className= "textCenter"
+            id= "category"
           >
             Explore With Category
           </Typography>

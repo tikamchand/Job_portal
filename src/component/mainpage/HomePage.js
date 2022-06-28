@@ -9,13 +9,13 @@ import { createTheme } from "@mui/material";
 import { ThemeProvider } from "@mui/material";
 import { responsiveFontSizes } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import "../App.css";
+import "../../App.css";
 
 function HomePage() {
   const backgroundStyles = {
     width: "100%",
     height: "85vh",
-    backgroundColor: "#e4ece8",
+    backgroundColor: "#e9f6f0",
   };
   const patternStyles = {
     position: "absolute",
@@ -63,6 +63,7 @@ function HomePage() {
         alignItems="center"
         justifyContent="center"
         style={backgroundStyles}
+        id="home"
       >
         <ThemeProvider theme={theme}>
           <Container width="lg">

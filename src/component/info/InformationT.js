@@ -7,7 +7,7 @@ import { createTheme } from "@mui/material/styles";
 import { ThemeProvider } from "@mui/material/styles";
 import { responsiveFontSizes } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import "../App.css"
+import "../../App.css";
 function InformationT() {
   let theme = createTheme({
     palette: {
